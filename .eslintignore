@@ -1,0 +1,4 @@
+# Start by ignoring everything by default
+src/containers/AccountSettings.js
+# Enable linting just for some files
+#!src/containers/AccountSettings.js

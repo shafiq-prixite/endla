@@ -7,16 +7,18 @@ import Footer from "../../Presentational/Footer";
 
 export const siteTitle = "endla";
 
-const LayoutDefault = ({ children }) => (
-  <>
-    <Helmet>
-      <link rel="icon" href="/favicon.svg" />
-    </Helmet>
-    <Header navPosition="right" />
+function LayoutDefault({ children }) {
+	return (
+		<>
+			<Helmet>
+				<link rel="icon" href="/favicon.svg" />
+			</Helmet>
+			<Header navPosition="right" />
 
-    <main className="site-content">{children}</main>
-    <Footer />
-  </>
-);
+			<main className="site-content">{children}</main>
+			<Footer />
+		</>
+	);
+}
 
 export default LayoutDefault;
